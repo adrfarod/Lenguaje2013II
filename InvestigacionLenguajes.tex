@@ -4,7 +4,7 @@
 % This is a simple template for a LaTeX document using the "article" class.
 % See "book", "report", "letter" for other types of document.
 
-\documentclass[11pt]{article} % use larger type; default would be 10pt
+\documentclass[12pt]{book} % use larger type; default would be 10pt
 
 \usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
 
@@ -55,27 +55,27 @@
 \usepackage{listings} 
 %%% The "real" document content comes below...
 
-\title{Investigación de Lenguajes - Java}
-\author{Adriana Rodríguez Sánchez}
+\title{Investigación del Lenguaje - Java}
+\author{Adriana Rodríguez \and Marcelo Sánchez \and Raquel Villón}
 %\date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
 
 \begin{document}
+
 \maketitle
-%\tableofcontents % No hace falta un TOC en un artículo corto
 
-\section{Introducción}
-		Java, es un lenguaje interpretado.\\
+\tableofcontents
+\newpage
+\mbox{}
 
-
-
-\section{Características}
-\section{Historia}
-\section{Tutorial de Instalación}
-\section{Hola Mundo y otros Programas Introductorios}
-
+\chapter{Introducción}
+\paragraph{En este primer capítulo se podrá analizar de acerca de qué es Java, conocer acerca de las principales funcionalidades así como también las características que destaca a este lenguaje orientado a objetos.}
+\section{?`Qu\'e es Java?}
+\chapter{Características}
+\chapter{Historia}
+\chapter{Tutorial de Instalación}
+\chapter{Hola Mundo y otros Programas Introductorios}
 \lstset{language=Pascal}          % Set your language (you can change the language for each code-block optionally)
-
 \begin{lstlisting}[frame=single]  % Start your code-block
 for i:=maxint to 0 do
 begin
@@ -85,6 +85,8 @@ Write('Case insensitive ');
 Write('Pascal keywords.');
 \end{lstlisting}
 
-
+\begin{thebibliography}{99}
+\bibitem{ob} Belmonte, O. (2005). Introducción al lenguaje de programación Java. [en línea]. Disponible en: 'http://www3.uji.es/belfern/pdidoc/IX26/Documentos/introJava.pdf' [2013, 19 de Octubre].
+\end{thebibliography}
 
 \end{document}
