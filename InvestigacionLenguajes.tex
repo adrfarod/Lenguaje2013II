@@ -63,27 +63,49 @@
 %\date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
 
+
+\usepackage{eso-pic}
+\newcommand\BackgroundEspol{
+	\put(-250,300){
+	\parbox[b][\paperheight]{\paperwidth}{%
+           	\vfill
+	           \centering
+           	\includegraphics[height=0.1\textheight,width=0.3\textwidth,keepaspectratio]{logoespol.jpg}%
+	            \vfill
+}}}
+
+\newcommand\BackgroundFiec{
+	\put(225,300){
+	\parbox[b][\paperheight]{\paperwidth}{%
+           	\vfill
+	           \centering
+           	\includegraphics[height=0.1\textheight,width=0.3\textwidth,keepaspectratio]{logofiec.jpg}%
+	            \vfill
+}}}
+
+
 \begin{document}
 
 
 \begin{titlepage}
-\hspace*{0.2in}
-\includegraphics[height=0.1\textheight]{logoespol}
-\hspace*{2.0in}
-\includegraphics[width=0.3\textwidth]{logofiec}
+%\hspace*{0.2in}
+\AddToShipoutPicture*{\BackgroundEspol}
+\AddToShipoutPicture*{\BackgroundFiec}
+%\includegraphics[height=0.1\textheight]{logoespol}
+%\hspace*{2.0in}
+%\includegraphics[width=0.3\textwidth]{logofiec}
 %\includegraphics[width=0.1\textwidth]
 \begin{center}
-\textsc{\Large Escuela Superior Polit\'ecnica del Litoral}\\[2.0cm]
+\textsc{\Large Escuela Superior Polit\'ecnica del Litoral}\\[1.0cm]
 \textsc{\Large Facultad de Ingenieria en Electricidad y Computaci\'on}\\[1.5cm]
 
-% Title
+% Titulo
 \HRule \\[0.4cm]
 { \LARGE \bfseries Investigaci\'on de Lenguajes - JAVA \\[0.4cm] }
-
 \HRule \\[1.5cm]
 
 
-% Author and supervisor
+% Autores
 \begin{minipage}{0.4\textwidth}
 \begin{flushleft} \large
 \emph{Autores:}\\
@@ -117,7 +139,7 @@ Ing.~Javier \textsc{Tibau}
 \chapter{Introducci\'on}
 \paragraph{En este primer cap\'itulo se podr\'a analizar de acerca de qu\'e es Java, conocer acerca de las principales funcionalidades as\'i como tambi\'en las caracter\'isticas que destaca a este lenguaje orientado a objetos.}
 \section{?`Qu\'e es Java?}
-\paragraph{Java es un lenguaje orientado a objetos \cite{ob} que permite la creaci\'on de clases y objetos para una buena implementaci\'on en la elaboraci'on de los proyectos a necesitarse.}
+\paragraph{Java es un lenguaje orientado a objetos \cite{ob} que permite la creaci\'on de clases y objetos para una buena implementaci\'on en la elaboraci\'on de los proyectos a necesitarse.}
 \chapter{Características}
 \chapter{Historia}
 \paragraph{Según los hermanos Deitel (2007), el lenguaje java fue creado en 1991 por la compañía Sun Microsystems, la cual es una empresa dedicada a la fabricación y venta de servidores y componentes de componentes informáticos. Empezó como un proyecto de investigación de la compañía denominado Green y fue pensado para programar los dispositivos electrónicos inteligentes.}
