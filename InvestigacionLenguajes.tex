@@ -94,20 +94,20 @@
 
 \usepackage{eso-pic}
 \newcommand\BackgroundEspol{
-	\put(-250,300){
+	\put(-218,338){
 	\parbox[b][\paperheight]{\paperwidth}{%
            	\vfill
 	           \centering
-           	\includegraphics[height=0.1\textheight,width=0.3\textwidth,keepaspectratio]{logoespol.jpg}%
+           	\includegraphics[height=0.07\textheight,width=0.3\textwidth,keepaspectratio]{logoespol.jpg}%
 	            \vfill
 }}}
 
 \newcommand\BackgroundFiec{
-	\put(225,300){
+	\put(245,338){
 	\parbox[b][\paperheight]{\paperwidth}{%
            	\vfill
 	           \centering
-           	\includegraphics[height=0.1\textheight,width=0.3\textwidth,keepaspectratio]{logofiec.jpg}%
+           	\includegraphics[height=0.07\textheight,width=0.22\textwidth,keepaspectratio]{logofiec.jpg}%
 	            \vfill
 }}}
 
@@ -166,8 +166,18 @@ Ing.~Javier \textsc{Tibau}
 
 \chapter{Introducci\'on}
 \paragraph{En este primer cap\'itulo se podr\'a analizar de acerca de qu\'e es Java, conocer acerca de las principales funcionalidades as\'i como tambi\'en las caracter\'isticas que destaca a este lenguaje orientado a objetos.}
+
 \section{?`Qu\'e es Java?}
-\paragraph{Java es un lenguaje orientado a objetos \cite{ob} que permite la creaci\'on de clases y objetos para una buena implementaci\'on en la elaboraci\'on de los proyectos a necesitarse.}
+
+\paragraph{Java basicamente es un lenguaje compilador e interpretador \cite{ob} esto quiere decir que el c\'odigo que genera es revisado por una m\'aquina virtual (JVM) que lo que hace es mantener alejado el c\'odigo en bytecodes sin la necesidad de revisar que sistema operativo es la que contiene la m\'aquina en la que se est\'a trabajando. Adem\'as, la m\'aquina virtual ayuda con la gesti\'on de la memoria ya que este consta con la ayuda del recolector de basura (que mantiene un control de liberaci\'on de memoria) llevan un control din\'amico entre si.}
+
+\paragraph{El recolector de basura (\textsl{Garbage Collector}) es el encargado principal del control de la localidad de la memoria para los objetos; dicho por \cite{sun} es el responsable que los objetos est\'en correctamente referenciados, siendo aquellos denominados como 'vivos' mientras que los objetos que no est\'an referenciados son considerados como objetos 'muertos' en lo que all\'i el recolector de basura se encarga de liberar el espacio de memoria que se hab\'ia establecido para ese objeto.}
+
+\begin{center}
+	\includegraphics[scale=0.8]{garbage.jpg}
+\end{center}
+\paragraph{}
+
 \chapter{Características}
 \chapter{Historia}
 \paragraph{Según los hermanos Deitel (2007), el lenguaje java fue creado en 1991 por la compañía Sun Microsystems, la cual es una empresa dedicada a la fabricación y venta de servidores y componentes de componentes informáticos. Empezó como un proyecto de investigación de la compañía denominado Green y fue pensado para programar los dispositivos electrónicos inteligentes.}
@@ -228,7 +238,10 @@ Ing.~Javier \textsc{Tibau}
 \end{lstlisting}
 
 \begin{thebibliography}{99}
-\bibitem{ob} Belmonte, O. (2005). Introducción al lenguaje de programación Java. [en línea]. Disponible en: 'http://www3.uji.es/belfern/pdidoc/IX26/Documentos/introJava.pdf' [2013, 19 de Octubre].
+\bibitem{ob} Belmonte, O. (2005). \textsl{Introducci\'on al lenguaje de programaci\'on Java}. [en l\'inea]. Disponible en: http://www3.uji.es/belfern/pdidoc/IX26/Documentos/introJava.pdf.
+
+\bibitem{sun} Sun Microsystems. (2006). \textsl{Memory Management in the Java Virtual Machine} [en l\'inea]. Disponible en: http://www.oracle.com/technetwork/java/javase/memorymanagement-whitepaper-150215.pdf
+
 \end{thebibliography}
 
 \end{document}
