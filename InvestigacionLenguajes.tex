@@ -167,18 +167,42 @@ Ing.~Javier \textsc{Tibau}
 \chapter{Introducci\'on}
 \paragraph{En este primer cap\'itulo se podr\'a analizar de acerca de qu\'e es Java, conocer acerca de las principales funcionalidades as\'i como tambi\'en las caracter\'isticas que destaca a este lenguaje orientado a objetos.}
 
-\section{?`Qu\'e es Java?}
-
 \paragraph{Java basicamente es un lenguaje compilador e interpretador \cite{ob} esto quiere decir que el c\'odigo que genera es revisado por una m\'aquina virtual (JVM) que lo que hace es mantener alejado el c\'odigo en bytecodes sin la necesidad de revisar que sistema operativo es la que contiene la m\'aquina en la que se est\'a trabajando. Adem\'as, la m\'aquina virtual ayuda con la gesti\'on de la memoria ya que este consta con la ayuda del recolector de basura (que mantiene un control de liberaci\'on de memoria) llevan un control din\'amico entre si.}
 
-\paragraph{El recolector de basura (\textsl{Garbage Collector}) es el encargado principal del control de la localidad de la memoria para los objetos; dicho por \cite{sun} es el responsable que los objetos est\'en correctamente referenciados, siendo aquellos denominados como 'vivos' mientras que los objetos que no est\'an referenciados son considerados como objetos 'muertos' en lo que all\'i el recolector de basura se encarga de liberar el espacio de memoria que se hab\'ia establecido para ese objeto.}
+\paragraph{El recolector de basura (\textsl{Garbage Collector}) es el encargado principal del control de la localidad de la memoria para los objetos; dicho por \cite{sun} es el responsable que los objetos est\'en correctamente referenciados, siendo aquellos denominados como 'vivos' mientras que los objetos que no est\'an referenciados son considerados como objetos 'muertos' en lo que all\'i el recolector de basura se encarga de liberar el espacio de memoria que se hab\'ia establecido para ese objeto. Un breve ejemplo sobre como ocupa espacio en la memoria tanto en llamadas como espacio se puede observar en la \textsl{Figura 1.1}.}
 
-\begin{center}
-	\includegraphics[scale=0.8]{garbage.jpg}
-\end{center}
-\paragraph{}
+\begin{figure}[h!]
+	\begin{center}
+	\includegraphics[scale=0.5]{garbage.jpg}
+	\end{center}
+	\caption{Uso del Garbage Collector en la memoria.}
+\end{figure}~\\[2cm]
+
+
+
+\paragraph{Se dice que Java es un OOP (Object-Oriented-Programming) \cite{oop}, contribuyendo en su sintaxis al manejo de objetos, que es un software formado a partir de un comportamiento y estado. La figura \textsl{Figura 1.2} muestra como est\'a compuesto un objeto. \textsl{Estado} es la caracter\'istica que tiene el objeto (nombre, direcci\'on, tel\'efono, etc.), mientras que el \textsl{comportamiento} se refiere a la actividad que este realiza(respirar, caminar, etc.)}~\\
+
+\paragraph{Otro aspecto principal con lo que est\'a proporcionado java es por el API (Application Programmer Interface) en el posee una colecci\'on de componentes que trabajan entre si para el uso en la gesti\'on de interfaces, redes, y en especial algoritmos que maneja encriptaci\'on y certificados. Esta informaci\'on es \'util principalmente para el manejo de seguirdad, cabe mencionar que el JVM tambi\'en lleva cr\'edito en el control de seguridad.}
+
+\begin{figure}[h!]
+		\centering
+			\includegraphics[width=10cm]{conceptsobject.jpg}
+			\caption{A software Object.}~\\[1.4cm]
+		
+\end{figure}
+
 
 \chapter{Características}
+\paragraph{Entre las principales caracter\'isticas que posee Java tenemos:}
+\section{Orientado a Objetos}
+\paragraph{Mencionado anteriormente, es una de las caracter\'isticas principales ya que por su manejo de objetos provee una mayor facilidad en la sint\'axis y en el control de m\'etodos.}
+\section{Robusto}
+\paragraph{Que el lenguaje sea robusto indica que posee una mayor rigidez al momento de codificar el c\'odigo, porque se va compilando para verficar que lo que se est\'e codificando este sin errores.}
+\section{Portable}
+\paragraph{La portabilidad, ayuda en el hecho que no es necesario especificar un sistema operativo, porque consta con el JVM que hace que esta condici\'on sea indiferente.}
+\section{MultiThread}
+paragraph{Considerado como los pocos lenguajes que maneja hilos, que son aquellos que poseen una acci\'on espec\'ifica en un periodo de tiempo. \cite{thread} indica que los hilos permiten a una aplicaci\'on ejecutar m\'ultiples hilos parcialmente.}
+
 \chapter{Historia}
 \paragraph{Según los hermanos Deitel (2007), el lenguaje java fue creado en 1991 por la compañía Sun Microsystems, la cual es una empresa dedicada a la fabricación y venta de servidores y componentes de componentes informáticos. Empezó como un proyecto de investigación de la compañía denominado Green y fue pensado para programar los dispositivos electrónicos inteligentes.}
 \paragraph{Deitel también indica que Java está basado en C++. Al principio su nombre fue Oak, pero luego se descubrió que ese nombre ya lo tenía otro lenguaje de programación. Luego, en una reunión de la gente de Sun en una cafetería, se propuso el nombre de Java, el cual es una variedad de café. }
@@ -323,6 +347,10 @@ Para crear una aplicación en Java debemos ir al menú de Archivo y, a continuac
 \bibitem DEITEL, Paul J. y Harvey M. DEITEL (2007). \textsl{C\'omo Programar en Java}. M\'exico..Pearson Education. 
 
 \bibitem Portal 20Minutos.(2013). \textsl{Oracle compra Sun Microsystems} [en l\'inea]. Disponible en: http://www.20minutos.es/noticia/464024/0/oracle/compra/sun/
+
+\bibitem{oop} Sun Microsystems. \textsl{Object-Oriented Programming Concepts} [en l\'inea]. Disponible en: http://docs.oracle.com/javase/tutorial/java/concepts/
+
+\bibitem{thread} Oracle. \textsl{API Java-Thread} [en l\'inea]. Disponible en: http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/Thread.html
 
 \end{thebibliography}
 
