@@ -74,7 +74,7 @@
   breakautoindent=true,
   captionpos=b,
   xleftmargin=0pt,
-  tabsize=4
+  tabsize=3
 }
 
 %%% END Article customizations
@@ -282,38 +282,44 @@ Y listo!
 \chapter{Hola Mundo y otros Programas Introductorios}
 
 \paragraph{Cada vez que se usa una computadora, esta ejecuta múltiples aplicaciones que realizan tareas para el usuario. Los programadores, son los encargados de elaborar estas aplicaciones, escribiendo programas de cómputo que permiten a los usuarios cumplir sus tareas diarias.}
-\paragraph{Ahora vamos a considerar la tarea de programar una aplicación sencilla, la cual muestra únicamente una línea de texto con el mensaje "Hola mundo" en consola, todo programador la ha elaborado de seguro en sus inicios en este lenguaje de programación.}
-\paragraph{Para esto necesitaremos hacer uso de un IDE, en este ejemplo usaremos el IDE de Java, Netbeans el cual ya habremos instalado previamente.
-Para crear una aplicación en Java debemos ir al menú de Archivo y, a continuación hacer clic en Nuevo Proyecto.}
+\paragraph{Ahora vamos a considerar la tarea de programar una aplicación sencilla, la cual muestra únicamente una línea de texto con el mensaje "Hola mundo\" \ en consola, esta aplicación sera la base para demostrar que programar en Java es fácil, todo programador ha escrito estas lineas de código, probablemente en sus inicios en este lenguaje de programación.}
+\paragraph{Para esto necesitaremos hacer uso de un IDE, en este ejemplo usaremos el IDE de Java, Netbeans en su mas reciente version, el cual ya habremos instalado previamente. \\Para crear una aplicación en Java debemos ir al menú de Archivo y, a continuación hacer clic en Nuevo Proyecto.}
 
-	\begin{figure}[h!]
+\paragraph{En la ventana que se despliega a continuación en el área de Categoría hacemos clic en Java y en el área de Proyecto, hacemos clic en Java Application, luego damos clic en siguiente.}
+
+	\begin{figure}[h]
 		\centering
-			\includegraphics[width=10cm]{Hola_mundo_001.jpg}
+			\includegraphics[width=16cm]{Hola_mundo_001.jpg}
 			\caption{Ventana Principal, Netbeans.}
-		
-	\end{figure}
-
-\paragraph{En la ventana que se despliega a continuación en el área de Categoría hacemos clic en Java y en el área de Proyecto nos hacemos clic en Java Application, luego damos clic en siguiente.}
-
-	\begin{figure}[h!]
-		\centering
-			\includegraphics[width=10cm]{Hola_mundo_002.jpg}
-			\caption{Ventana Nuevo Proyecto, Netbeans.}
 		
 	\end{figure}
 
 \paragraph{En la nueva ventana, en el recuadro de Nombre del Proyecto, escribimos un nombre, luego hacemos clic en siguiente.}
 
-	\begin{figure}[h!]
+	\begin{figure}[h]
 		\centering
-			\includegraphics[width=10cm]{Hola_mundo_003.jpg}
+			\includegraphics[width=12cm]{Hola_mundo_002.jpg}
+			\caption{Ventana Nuevo Proyecto, Netbeans.}
+		
+	\end{figure}
+
+\paragraph{Ya en la ventana de nuestro nuevo proyecto, podemos notar que luego de la linea:}
+
+	\begin{figure}[h]
+		\centering
+			\includegraphics[width=12cm]{Hola_mundo_003.jpg}
 			\caption{Ventana Nueva Aplicaci\'on Java, Netbeans.}
 		
 	\end{figure}
 
-\paragraph{Ya en la ventana de nuestro nuevo proyecto, podemos notar que en la linea 14 hay un mensaje que dice "Todo el CÓDIGO va AQUÍ", y es porque es allí donde debemos escribir la función para imprimir el mensaje en pantalla, el código quedaría de la siguiente manera.}
 
 \noindent
+\begin{lstlisting}[frame=single]
+   public static void main (String argv[])
+\end{lstlisting}
+
+\paragraph{Existe un comentario que dice "Todo el CÓDIGO va AQUÍ", y es porque es allí donde debemos escribir la función para imprimir el mensaje en pantalla, el código quedaría de la siguiente manera.}
+
 \noindent
 %
 \begin{lstlisting}[frame=single]
@@ -329,16 +335,17 @@ Para crear una aplicación en Java debemos ir al menú de Archivo y, a continuac
  }
 \end{lstlisting}
 
-\paragraph{Una vez escritas las lineas de código, pulsamos la tecla F5 o en su defecto vamos al menú Ejecutar, Ejecutar Proyecto. Y si esta todo correctamente escrito, en consola se debería mostrar el mensaje: Hola mundo!.}
+\paragraph{Una vez escritas las lineas de código, pulsamos la tecla F5 o en su defecto vamos al menú Ejecutar, Ejecutar Proyecto.}
 
-	\begin{figure}[h!]
+\paragraph{Y si esta todo correctamente escrito, en consola se debería mostrar el mensaje: Hola mundo!.}
+
+	\begin{figure}[h]
 		\centering
 			\includegraphics[width=10cm]{Hola_mundo_004.jpg}
 			\caption{Ejecuci\'on correcta, Aplicaci\'on Java.}
 		
 	\end{figure}
-
-
+	
 \begin{thebibliography}{99}
 \bibitem{ob} Belmonte, O. (2005). \textsl{Introducci\'on al lenguaje de programaci\'on Java}. [en l\'inea]. Disponible en: http://www3.uji.es/belfern/pdidoc/IX26/Documentos/introJava.pdf.
 
