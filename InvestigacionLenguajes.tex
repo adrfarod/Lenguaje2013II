@@ -294,43 +294,47 @@ Anteriormente hubiera sido necesario agregar una nueva variable de entorno para 
 \chapter{Hola Mundo y otros Programas Introductorios}
 
 Cada vez que se usa una computadora, esta ejecuta múltiples aplicaciones que realizan tareas para el usuario. Los programadores, son los encargados de elaborar estas aplicaciones, escribiendo programas de cómputo que permiten a los usuarios cumplir sus tareas diarias.
-Ahora vamos a considerar la tarea de programar una aplicación sencilla, la cual muestra únicamente una línea de texto con el mensaje "Hola mundo", en consola, esta aplicación sera la base para demostrar que programar en Java es fácil, todo programador ha escrito estas lineas de código, probablemente en sus inicios en este lenguaje de programación.
+Ahora vamos a considerar la tarea de programar una aplicación sencilla, la cual muestra únicamente una línea de texto con el mensaje ``Hola mundo", en consola, esta aplicación sera la base para demostrar que programar en Java es fácil, todo programador ha escrito estas lineas de código, probablemente en sus inicios en este lenguaje de programación.
 Para esto necesitaremos hacer uso de un IDE, en este ejemplo usaremos el IDE de Java, Netbeans en su mas reciente version, el cual ya habremos instalado previamente. \\Para crear una aplicación en Java debemos ir al menú de Archivo y, a continuación hacer clic en Nuevo Proyecto.
 
-En la ventana que se despliega a continuación en el área de Categoría hacemos clic en Java y en el área de Proyecto, hacemos clic en Java Application, luego damos clic en siguiente.
+En la ventana que se despliega a continuación (fig. \ref{hw01}) en el área de Categoría hacemos clic en Java y en el área de Proyecto, hacemos clic en Java Application, luego damos clic en siguiente.
 
 	\begin{figure}[h]
 		\centering
 			\includegraphics[width=16cm]{Hola_mundo_001.jpg}
 			\caption{Ventana Principal, Netbeans.}
-		
+			\label{hw01}
 	\end{figure}
 
-En la nueva ventana, en el recuadro de Nombre del Proyecto, escribimos un nombre, luego hacemos clic en siguiente.
+En la nueva ventana(fig. \ref{hw02}), en el recuadro de Nombre del Proyecto, escribimos un nombre, luego hacemos clic en siguiente.
 
 	\begin{figure}[h]
 		\centering
 			\includegraphics[width=12cm]{Hola_mundo_002.jpg}
 			\caption{Ventana Nuevo Proyecto, Netbeans.}
-		
+			\label{hw02}
 	\end{figure}
 
-Ya en la ventana de nuestro nuevo proyecto, podemos notar que luego de la linea:
+Ya en la ventana de nuestro nuevo proyecto(fig. \ref{hw03}), podemos notar que luego de la linea:
 
 	\begin{figure}[h]
 		\centering
 			\includegraphics[width=12cm]{Hola_mundo_003.jpg}
 			\caption{Ventana Nueva Aplicación Java, Netbeans.}
-		
+			\label{hw03}
 	\end{figure}
 
 
 \noindent
 \begin{lstlisting}[frame=single]
    public static void main (String argv[])
+   {
+     // Todo el CODIGO va AQUI
+     
+   }
 \end{lstlisting}
 
-Existe un comentario que dice "Todo el CÓDIGO va AQUÍ", y es porque es allí donde debemos escribir la función para imprimir el mensaje en pantalla, el código quedaría de la siguiente manera.
+Existe un comentario que dice ``Todo el CÓDIGO va AQUÍ", y es porque es allí donde debemos escribir la función para imprimir el mensaje en pantalla, el código quedaría de la siguiente manera.
 
 \noindent
 %
@@ -349,13 +353,13 @@ Existe un comentario que dice "Todo el CÓDIGO va AQUÍ", y es porque es allí d
 
 Una vez escritas las lineas de código, pulsamos la tecla F5 o en su defecto vamos al menú Ejecutar, Ejecutar Proyecto.
 
-Y si esta todo correctamente escrito, en consola se debería mostrar el mensaje: Hola mundo!.
+Y si esta todo correctamente escrito como en la fig. \ref{hw04}, en consola se debería mostrar el mensaje: Hola mundo!.
 
 	\begin{figure}[h]
 		\centering
-			\includegraphics[width=10cm]{Hola_mundo_004.jpg}
+			\includegraphics[width=16cm]{Hola_mundo_004.jpg}
 			\caption{Ejecución correcta, Aplicación Java.}
-		
+			\label{hw04}
 	\end{figure}
 	
 \begin{thebibliography}{99}
