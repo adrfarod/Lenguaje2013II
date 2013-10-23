@@ -165,11 +165,11 @@ Ing.~Javier \textsc{Tibau}
 \mbox{}
 
 \chapter{Introducci\'on}
-\paragraph{En este primer cap\'itulo se podr\'a analizar de acerca de qu\'e es Java, conocer acerca de las principales funcionalidades as\'i como tambi\'en las caracter\'isticas que destaca a este lenguaje orientado a objetos.}
+En este primer cap\'itulo se podr\'a analizar de acerca de qu\'e es Java, conocer acerca de las principales funcionalidades as\'i como tambi\'en las caracter\'isticas que destaca a este lenguaje orientado a objetos.
 
-\paragraph{Java basicamente es un lenguaje compilador e interpretador \cite{ob} esto quiere decir que el c\'odigo que genera es revisado por una m\'aquina virtual (JVM) que lo que hace es mantener alejado el c\'odigo en bytecodes sin la necesidad de revisar que sistema operativo es la que contiene la m\'aquina en la que se est\'a trabajando. Adem\'as, la m\'aquina virtual ayuda con la gesti\'on de la memoria ya que este consta con la ayuda del recolector de basura (que mantiene un control de liberaci\'on de memoria) llevan un control din\'amico entre si.}
+Java basicamente es un lenguaje compilador e interpretador \cite{ob} esto quiere decir que el c\'odigo que genera es revisado por una m\'aquina virtual (JVM) que lo que hace es mantener alejado el c\'odigo en bytecodes sin la necesidad de revisar que sistema operativo es la que contiene la m\'aquina en la que se est\'a trabajando. Adem\'as, la m\'aquina virtual ayuda con la gesti\'on de la memoria ya que este consta con la ayuda del recolector de basura (que mantiene un control de liberaci\'on de memoria) llevan un control din\'amico entre si.
 
-\paragraph{El recolector de basura (\textsl{Garbage Collector}) es el encargado principal del control de la localidad de la memoria para los objetos; dicho por \cite{sun} es el responsable que los objetos est\'en correctamente referenciados, siendo aquellos denominados como 'vivos' mientras que los objetos que no est\'an referenciados son considerados como objetos 'muertos' en lo que all\'i el recolector de basura se encarga de liberar el espacio de memoria que se hab\'ia establecido para ese objeto. Un breve ejemplo sobre como ocupa espacio en la memoria tanto en llamadas como espacio se puede observar en la \textsl{Figura 1.1}.}
+El recolector de basura (\textsl{Garbage Collector}) es el encargado principal del control de la localidad de la memoria para los objetos; dicho por \cite{sun} es el responsable que los objetos est\'en correctamente referenciados, siendo aquellos denominados como 'vivos' mientras que los objetos que no est\'an referenciados son considerados como objetos 'muertos' en lo que all\'i el recolector de basura se encarga de liberar el espacio de memoria que se hab\'ia establecido para ese objeto. Un breve ejemplo sobre como ocupa espacio en la memoria tanto en llamadas como espacio se puede observar en la \textsl{Figura 1.1}.
 
 \begin{figure}[h!]
 	\begin{center}
@@ -180,9 +180,9 @@ Ing.~Javier \textsc{Tibau}
 
 
 
-\paragraph{Se dice que Java es un OOP (Object-Oriented-Programming) \cite{oop}, contribuyendo en su sintaxis al manejo de objetos, que es un software formado a partir de un comportamiento y estado. La figura \textsl{Figura 1.2} muestra como est\'a compuesto un objeto. \textsl{Estado} es la caracter\'istica que tiene el objeto (nombre, direcci\'on, tel\'efono, etc.), mientras que el \textsl{comportamiento} se refiere a la actividad que este realiza(respirar, caminar, etc.)}~\\
+Se dice que Java es un OOP (Object-Oriented-Programming) \cite{oop}, contribuyendo en su sintaxis al manejo de objetos, que es un software formado a partir de un comportamiento y estado. La figura \textsl{Figura 1.2} muestra como est\'a compuesto un objeto. \textsl{Estado} es la caracter\'istica que tiene el objeto (nombre, direcci\'on, tel\'efono, etc.), mientras que el \textsl{comportamiento} se refiere a la actividad que este realiza(respirar, caminar, etc.)
 
-\paragraph{Otro aspecto principal con lo que est\'a proporcionado java es por el API (Application Programmer Interface) en el posee una colecci\'on de componentes que trabajan entre si para el uso en la gesti\'on de interfaces, redes, y en especial algoritmos que maneja encriptaci\'on y certificados. Esta informaci\'on es \'util principalmente para el manejo de seguirdad, cabe mencionar que el JVM tambi\'en lleva cr\'edito en el control de seguridad.}
+Otro aspecto principal con lo que est\'a proporcionado java es por el API (Application Programmer Interface) en el posee una colecci\'on de componentes que trabajan entre si para el uso en la gesti\'on de interfaces, redes, y en especial algoritmos que maneja encriptaci\'on y certificados. Esta informaci\'on es \'util principalmente para el manejo de seguirdad, cabe mencionar que el JVM tambi\'en lleva cr\'edito en el control de seguridad.
 
 \begin{figure}[h!]
 		\centering
@@ -193,90 +193,102 @@ Ing.~Javier \textsc{Tibau}
 
 
 \chapter{Características}
-\paragraph{Entre las principales caracter\'isticas que posee Java tenemos:}
+Entre las principales caracter\'isticas que posee Java tenemos:
+
 \section{Orientado a Objetos}
-\paragraph{Mencionado anteriormente, es una de las caracter\'isticas principales ya que por su manejo de objetos provee una mayor facilidad en la sint\'axis y en el control de m\'etodos.}
+Mencionado anteriormente, es una de las caracter\'isticas principales ya que por su manejo de objetos provee una mayor facilidad en la sint\'axis y en el control de m\'etodos.
 \section{Robusto}
-\paragraph{Que el lenguaje sea robusto indica que posee una mayor rigidez al momento de codificar el c\'odigo, porque se va compilando para verficar que lo que se est\'e codificando este sin errores.}
+Que el lenguaje sea robusto indica que posee una mayor rigidez al momento de codificar el c\'odigo, porque se va compilando para verficar que lo que se est\'e codificando este sin errores.
 \section{Portable}
-\paragraph{La portabilidad, ayuda en el hecho que no es necesario especificar un sistema operativo, porque consta con el JVM que hace que esta condici\'on sea indiferente.}
+La portabilidad, ayuda en el hecho que no es necesario especificar un sistema operativo, porque consta con el JVM que hace que esta condici\'on sea indiferente.
 \section{MultiThread}
-paragraph{Considerado como los pocos lenguajes que maneja hilos, que son aquellos que poseen una acci\'on espec\'ifica en un periodo de tiempo. \cite{thread} indica que los hilos permiten a una aplicaci\'on ejecutar m\'ultiples hilos parcialmente.}
+Considerado como los pocos lenguajes que maneja hilos, que son aquellos que poseen una acci\'on espec\'ifica en un periodo de tiempo. \cite{thread} indica que los hilos permiten a una aplicaci\'on ejecutar m\'ultiples hilos parcialmente.
 
 \chapter{Historia}
-\paragraph{Según los hermanos Deitel (2007), el lenguaje java fue creado en 1991 por la compañía Sun Microsystems, la cual es una empresa dedicada a la fabricación y venta de servidores y componentes de componentes informáticos. Empezó como un proyecto de investigación de la compañía denominado Green y fue pensado para programar los dispositivos electrónicos inteligentes.}
-\paragraph{Deitel también indica que Java está basado en C++. Al principio su nombre fue Oak, pero luego se descubrió que ese nombre ya lo tenía otro lenguaje de programación. Luego, en una reunión de la gente de Sun en una cafetería, se propuso el nombre de Java, el cual es una variedad de café. }
-\paragraph{Al principio el proyecto Green tuvo problemas debido a que el avance de los dispositivos electrónicos inteligentes no se desarrollaba tan rápido como Sun había previsto. Sin embargo, cuando la World Wide Web explotó, Sun vio rápidamente el potencial que Java tenía para darle dinamismo a las páginas web. De esa manera el proyecto Green pudo avanzar y finalizar con una conferencia en mayo de 1995, en la que Sun Microsystems anunció formalmente la existencia del lenguaje de programación Java. }
-\paragraph{A medida que la World Wide Web avanzaba Java tenía mayor acogida y se desarrolló de tal modo en el que luego se lo utilizó para desarrollar grandes aplicaciones empresariales, aplicaciones para dispositivos móviles, radiolocalizadores, asistentes personales digitales, entre otros. }
-\paragraph{En el 2009, Sun Microsystems fue comprada por Oracle por un valor de 7.400 millones de dólares según el portal 20minutos.es (2009) Y actualmente se distribuye la versión número 7 de Java, así como también sus diferentes líneas. Estas líneas se especializan en un ambiente, por ejemplo: Java SE está creada especialmente para aplicaciones de escritorio; Java EE es especializado en crear aplicaciones web; Java ME es utilizado para desarrollar aplicaciones que se ejecutan en dispositivos móviles, etc. }
+Según los hermanos Deitel (2007), el lenguaje java fue creado en 1991 por la compañía Sun Microsystems, la cual es una empresa dedicada a la fabricación y venta de servidores y componentes de componentes informáticos. Empezó como un proyecto de investigación de la compañía denominado Green y fue pensado para programar los dispositivos electrónicos inteligentes.
+
+Deitel también indica que Java está basado en C++. Al principio su nombre fue Oak, pero luego se descubrió que ese nombre ya lo tenía otro lenguaje de programación. Luego, en una reunión de la gente de Sun en una cafetería, se propuso el nombre de Java, el cual es una variedad de café.
+
+Al principio el proyecto Green tuvo problemas debido a que el avance de los dispositivos electrónicos inteligentes no se desarrollaba tan rápido como Sun había previsto. Sin embargo, cuando la World Wide Web explotó, Sun vio rápidamente el potencial que Java tenía para darle dinamismo a las páginas web. De esa manera el proyecto Green pudo avanzar y finalizar con una conferencia en mayo de 1995, en la que Sun Microsystems anunció formalmente la existencia del lenguaje de programación Java. 
+
+A medida que la World Wide Web avanzaba Java tenía mayor acogida y se desarrolló de tal modo en el que luego se lo utilizó para desarrollar grandes aplicaciones empresariales, aplicaciones para dispositivos móviles, radiolocalizadores, asistentes personales digitales, entre otros. 
+
+En el 2009, Sun Microsystems fue comprada por Oracle por un valor de 7.400 millones de dólares según el portal 20minutos.es (2009) Y actualmente se distribuye la versión número 7 de Java, así como también sus diferentes líneas. Estas líneas se especializan en un ambiente, por ejemplo: Java SE está creada especialmente para aplicaciones de escritorio; Java EE es especializado en crear aplicaciones web; Java ME es utilizado para desarrollar aplicaciones que se ejecutan en dispositivos móviles, etc.
 
 
 
 \chapter{Tutorial de Instalación}
-\paragraph{Para poder correr aplicaciones creadas en Java se necesita mínimo instalar Java Runtime Enviroment (JRE). Pero si lo que se quiere es desarrollar aplicaciones en Java, entonces necesita Java Development Kit (JDK) que contiene al JRE y herramientas para desarrollar, depurar y monitorear aplicaciones en Java (Oracle.com).}
-\paragraph{En este documento mostraremos la instalación de Java SE 7, distribución para el desarrollo de aplicaciones de escritorio, en plataforma Windows 8 de 64bits. Para esto necesitaremos lo siguiente:}
+Para poder correr aplicaciones creadas en Java se necesita mínimo instalar Java Runtime Enviroment (JRE). Pero si lo que se quiere es desarrollar aplicaciones en Java, entonces necesita Java Development Kit (JDK) que contiene al JRE y herramientas para desarrollar, depurar y monitorear aplicaciones en Java (Oracle.com).
+
+En este documento mostraremos la instalación  de Java SE 7, distribución para el desarrollo de aplicaciones de escritorio, en plataforma Windows 8 de 64bits. Para esto necesitaremos lo siguiente:
 
 \begin{enumerate}
-\item Descargar el JDK directamente de la página oficial de Oracle. \\http://www.oracle.com/technetwork/java/javase/downloads/index.html.\\
-En la siguiente figura se muestra la opción para descargar sólo el JDK o el JDK con el IDE de desarrollo creado por Oracle, NetBeans. Escogeremos descargar sólo el JDK.
-	
-	\begin{figure}[h!]
+\item Descargar el JDK directamente de la página oficial de Oracle\footnote{http://www.oracle.com/technetwork/java/javase/downloads/index.html}.
+
+\begin{figure}[!hbp]
 		\centering
 			\includegraphics[width=10cm]{ins1.jpg}
-			\caption{P\'agina de descarga del JDK.}
+			\caption{Página de descarga del JDK.}
+			\label{fig1}
 		
 	\end{figure}
+En la Figura \ref{fig1} se muestra la opción para descargar sólo el JDK o el JDK con el IDE de desarrollo creado por Oracle, NetBeans. Escogeremos descargar sólo el JDK.
+	
+	
 	
 \item Para poder descargar el JDK debemos aceptar la licencia Y escoger el instalador adecuado para el Sistema operativo que se esté utilizando como se muestra en la Figura 4.2.
 
-	\begin{figure}[h]
+	\begin{figure}[!hbp]
 		\centering
 			\includegraphics[width=10cm]{ins2.jpg}
-			\caption{P\'agina de descarga del JDK.}
+			\caption{Página de descarga del JDK.}
 		
 	\end{figure}
 
-\item Cuando finalice la descarga, se podr\'a comenzar la instalaci\'on ayudado por una wizzard de windows. de las Figuras 4.3 a 4.8
+\item Cuando finalice la descarga, se podrá comenzar la instalación ayudado por una wizzard de windows. de las Figuras 4.3 a 4.8
 
-	\begin{figure}[h!]
+	\begin{figure}[!hbp]
 		\centering
-			\includegraphics[width=10cm]{ins3.jpg}
-			\caption{P\'agina de descarga del JDK.}
+			\includegraphics[width=8cm]{ins3.jpg}
+			\caption{Página de descarga del JDK.}
 		
 	\end{figure}
-	\begin{figure}[h!]
+	\begin{figure}[!hbp]
 		\centering
-			\includegraphics[width=10cm]{ins4.jpg}
-			\caption{P\'agina de descarga del JDK.}
+			\includegraphics[width=8cm]{ins4.jpg}
+			\caption{Página de descarga del JDK.}
 		
 	\end{figure}
-	\begin{figure}[h!]
+	\begin{figure}[!hbp]
 		\centering
-			\includegraphics[width=10cm]{ins5.jpg}
-			\caption{P\'agina de descarga del JDK.}
+			\includegraphics[width=8cm]{ins5.jpg}
+			\caption{Página de descarga del JDK.}
 		
 	\end{figure}
-	\begin{figure}[h!]
+	\begin{figure}[!hbp]
 		\centering
-			\includegraphics[width=10cm]{ins6.jpg}
-			\caption{P\'agina de descarga del JDK.}
+			\includegraphics[width=8cm]{ins6.jpg}
+			\caption{Página de descarga del JDK.}
 		
 	\end{figure}
-	\begin{figure}[h!]
+	\begin{figure}[!hbp]
 		\centering
-			\includegraphics[width=10cm]{ins7.jpg}
-			\caption{P\'agina de descarga del JDK.}
+			\includegraphics[width=8cm]{ins7.jpg}
+			\caption{Página de descarga del JDK.}
 		
 	\end{figure}
-	\begin{figure}[t!]
+	\begin{figure}[!hbp]
 		\centering
-			\includegraphics[width=10cm]{ins8.jpg}
-			\caption{P\'agina de descarga del JDK.}
+			\includegraphics[width=8cm]{ins8.jpg}
+			\caption{Página de descarga del JDK.}
 		
 	\end{figure}
+	
 Y listo!
+
 \end{enumerate}
-\paragraph{Anteriormente hubiera sido necesario agregar una nueva variable de entorno para que el sistema sepa dónde buscar el compilador y ejecutor de java. Pero desde el sistema operativo Windows 7, hacer esta especificación ya no es necesaria.}
+
+Anteriormente hubiera sido necesario agregar una nueva variable de entorno para que el sistema sepa dónde buscar el compilador y ejecutor de java. Pero desde el sistema operativo Windows 7, hacer esta especificación ya no es necesaria.
 
 
 \chapter{Hola Mundo y otros Programas Introductorios}
