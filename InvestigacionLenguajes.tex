@@ -339,8 +339,6 @@ Ya en la ventana de nuestro nuevo proyecto(fig. \ref{hw03}), podemos notar que l
 
 Existe un comentario que dice ``Todo el CÓDIGO va AQUÍ", y es porque es allí donde debemos escribir la función para imprimir el mensaje en pantalla, el código quedaría de la siguiente manera.
 
-\noindent
-%
 \begin{lstlisting}[frame=single]
 /**
  * Este es un comentario
@@ -364,6 +362,66 @@ Y si esta todo correctamente escrito como en la fig. \ref{hw04}, en consola se d
 			\caption{Ejecución correcta, Aplicación Java.}
 			\label{hw04}
 	\end{figure}
+	
+\newpage
+Uno de las aplicaciones básicas que se realizan en Java, al momento que se está aprendiendo a programar, es la aplicación que pide información y devuelve otra a cambio, formularios sencillos que nos ayudan a comprender un poco, como la maquina es educada para resolver nuestros requerimientos, con los comandos de Java.
+Procederemos a crear un nuevo proyecto con los pasos descritos en las fig \ref{hw01}, \ref{hw02}, \ref{hw03}.
+ 
+En la línea de comando ingresamos lo siguiente;
+
+\begin{lstlisting}[frame=single]
+public class solicitardatos {
+    public static void main(String[] args) {
+        String anioS;
+        String nombre;
+        int anio, edad;
+        nombre = JOptionPane.showInputDialog("Como te llamas");
+        anioS = JOptionPane.showInputDialog("En que anio naciste");
+        anio = Integer.parseInt(anioS);
+        edad = 2013 - anio;
+        System.out.println("Hola " + nombre + " tienes " + edad + " anios");
+    }
+}
+\end{lstlisting}
+
+Primeramente lo que hacemos es definir las variables que utilizaremos, dos variables tipo String y dos enteros tipo int:
+
+\begin{lstlisting}[]
+	String anioS;
+	String nombre;
+	int anio, edad; 
+\end{lstlisting}
+	
+Luego con la función \textit{JOptionPane.showInputDialog();}  mostramos una ventana en la cual pedimos el nombre y lo almacenamos en la variable tipo String nombre.
+
+\begin{lstlisting}[]
+	nombre = JOptionPane.showInputDialog("Como te llamas");
+\end{lstlisting}
+	
+Lo mismo para el año de nacimiento:
+
+\begin{lstlisting}[]
+	anioS = JOptionPane.showInputDialog("En que anio naciste");
+\end{lstlisting}
+
+Puesto que queremos calcular la edad para mostrarla en consola, necesitamos convertir el String en entero tipo int, esto lo hacemos con la función.
+	
+\begin{lstlisting}[]
+	anio = Integer.parseInt(anioS);
+\end{lstlisting}
+
+Luego hacemos el cálculo de la edad, con una resta simple y la almacenamos en la variable edad.
+
+\begin{lstlisting}[]
+	edad = 2013 - anio;
+\end{lstlisting}
+	
+Finalmente con toda la información que tenemos, se imprime en consola, con la instrucción: 
+
+\begin{lstlisting}[]
+	System.out.println("Hola " + nombre + " tienes " + edad + " anios");
+\end{lstlisting}
+		
 	
 \begin{thebibliography}{99}
 \bibitem{ob} Belmonte, O. (2005). \textsl{Introducción al lenguaje de programación Java}. [en línea]. Disponible en: http://www3.uji.es/belfern/pdidoc/IX26/Documentos/introJava.pdf.
